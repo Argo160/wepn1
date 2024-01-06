@@ -409,7 +409,7 @@ disable_ufw(){
       # ufw is installed, stop and disable it
       service ufw stop
       systemctl is-enabled --quiet ufw && ufw disable > /dev/null
-      iptables -I INPUT -j ACCEPT
+     # iptables -I INPUT -j ACCEPT
   fi
 }
 #----------------------------------------------------------------------------------------------------------------------- get latest version number
